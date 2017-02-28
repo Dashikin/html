@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Разметка страницы</title>
+	<!--[if lt IE 9]> 
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<style>
+	  body {
+	  max-width: 800px;
+	  min-width: 500px;
+	  overflow: scroll;
+	  background: #fff;
+	  }
+	/* container {
+	} */
+	  header {
+	  display: block;
+	  background-color: #fff
+	  }
+	  .header-bg {
+	  width: 100%;
+	  height: 50px;
+	  border-bottom: 1px solid #999;
+	  }
+	  .sidebarright {
+	  width: 300px;
+	  float: left;
+	  border-left: 1px solid #ccc;
+	  margin-top: 50px;
+	  margin-bottom: 50px;
+	  }
+	  footer { 
+	  display: block;
+	  background-color: #fff; 
+	  overflow: auto; 
+	  }
+	  .footer-bg {
+	  width: 100%;
+	  heigher: 50px;
+	  border-top: 1px solid #999;
+	  }	  
+	</style>
+  </head>
+  <body>
+    <header><div class="header-bg"></div></header>
+	<aside><div class="sidebarright"></div></aside>
+	<footer><div class="footer-bg"></div></footer>
+  </body>
+</html>
