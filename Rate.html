@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+	<script type="text/javascript">
+	  var i = 0;
+	  minus.onclick = function () {
+	  var counter = document.getElementById("counter");
+	  counter.innerHTML = --i;
+	  result();
+	  }
+	  plus.onclick = function () {
+	  var counter = document.getElementById("counter");
+	  counter.innerHTML = ++i;
+	  result();
+	  }
+	  function result() {
+	  var result = document.getElementById("result");
+	  result.innerHTML = 9691 + i;
+	  }
+	  
+    <title>Rate</title>
+	<style>
+	.ratebar {
+	margin: 10px 20px;
+	height: 40px;
+	position: relative;
+	border-radius: 5px;
+	background: #909497;
+	}
+	.rate {
+	width: 100px;
+	height: 100%;
+	font: 1em/40px Arial;
+	color: #fff;
+	text-align: center;
+	padding: 0 10px;
+	border-radius: 5px 0 0 5px;
+	background: #a3c741;
+	}
+	.controls {
+	position: absolute;
+	height: 100%;
+	right: 0;
+	top: 0;
+	}
+	.b {
+	display: inline-block;
+	vertical-align: top;
+	width: 26px;
+	height: 26px;
+	margin: 6px 14px;
+	border: 1px solid #6f7172;
+	outline: none;
+	border-radius: 4px;
+	text-align: center;
+	color: #fff;
+	font-weight: bold;
+	}
+	.add {
+	background-color: #b63636;
+	font-size: 1.4em;
+	line-height: 0;
+	}
+	.counter {
+	font: 1em/43px Arial;
+	color: #fff;
+	cursor: default;
+	}
+	.sub {
+	background-color: #9dc538;
+	font-size: 1.4em;
+	}
+	.shadow {
+	box-shadow: 0 0 1px rgba(0,0,0,.5);
+	}
+    </style>
+  </head>
+  <body>
+  <div><img src="http://htmlbook.ru/files/images/practical/51.png" alt=""></div>
+  <div class="ratebar">
+  <div class="rate"><span id="result">9691</span></div>
+  <div class="controls">
+    <button class="add b shadow" id="minus">-</button>
+    <span class="counter" id="counter">6</span>
+    <button class="sub b shadow" id="plus">+</button>
+  </div>
+</div>
