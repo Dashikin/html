@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+	<title>TTX</title>
+  <style>
+    div.container {
+	width:390px;
+	overflow:hidden;
+	margin:20px;
+	}
+	div.bar {
+	margin:0 auto;
+	margin-bottom:0px;
+	background-color:#878F94;
+	width:355px;
+	height:40px;
+	padding-left:25px;
+	font-family:serif;
+	position:relative;
+	transform:skewX(-25deg)
+	}
+	div.bar div.text {
+	width:130px;
+	line-height:40px;
+	position:absolute;
+	transform:skewX(25deg);
+	color:#e7e7e7;
+	}
+	div.bar div.square {
+	width:18px;
+	height:18px;
+	position:relative;
+	float:right;
+	right:20px;
+	margin-left:12px;
+	margin-top:11px;
+	}
+	.cyan {background-color:#51DBB3;}
+	.yellow {background-color:#DBD651;}
+	.orange {background-color:#DB8F51;}
+	.grey {background-color:#D3D5D4;}
+  </style>
+  </head>
+  <body>
+    <div class="container">
+	  <div class="bar">
+	    <div class="text">Уровень заряда</div> 
+		<div class="square orange"></div>
+		<div class="square orange"></div>
+		<div class="square yellow"></div>
+		<div class="square yellow"></div>
+		<div class="square cyan"></div>
+		<div class="square cyan"></div>
+	  </div>
+	</div>  
+	
+	<div class="container">
+	  <div class="bar">
+	    <div class="text">Убойная сила</div>
+		<div class="square grey"></div>
+		<div class="square grey"></div>
+		<div class="square grey"></div>
+		<div class="square yellow"></div>
+		<div class="square cyan"></div>
+		<div class="square cyan"></div>
+	  </div>
+	</div> 
+	
+	<div class="container">
+	  <div class="bar">
+	    <div class="text">Перезарядка</div>
+		<div class="square grey"></div>
+		<div class="square grey"></div>
+		<div class="square grey"></div>
+		<div class="square grey"></div>
+		<div class="square grey"></div>
+		<div class="square cyan"></div>
+	  </div>
+	</div> 
+  </body>
+</html>
