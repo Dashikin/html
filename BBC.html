@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>BBC</title>
+  <style>
+/* Вариант 1 */
+    .bbc_a {
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+	margin: 70px;
+	box-shadow: 0 0 0 33px #fff, 0 0 0 66px #c70102;
+	background: #000e5e;
+	}
+/* Вариант 2 */
+	.bbc_b {
+	width: 200 px;
+	height: 200px;
+	border-radius: 50%;
+	background: radial-gradient(circle at center, #000e5e 24%, 
+                #fff 25%, #fff 50%, #c70102 51%, #c70102);
+	}
+/* Вариант 3 */
+	.red {
+	border: 30px solid #c70102;
+	border-radius: 150px;
+	width: 150px;
+	height: 150px;
+	margin: 300px auto;	
+	}
+	.blue {
+	border: 1px solid #000e5e;
+	border-radius: 100px;
+	width: 60px;
+	height: 60px;
+	background: #000e5e;
+	margin: 45px auto;
+	}
+/* Вариант 4 */
+	svg {
+	width: 100%;
+	height: 800px;
+	}
+  </style>
+  </head>
+  <body>
+    <div class="bbc_a"></div>
+	<div class="bbc_b"></div>
+	<div class="red">
+	  <div class="blue"></div>
+	</div>
+	<svg>
+      <circle r="100" cx="50%" cy="50%" fill="#c70102"/>
+	  <circle r="70" cx="50%" cy="50%" fill="white"/>
+	  <circle r="35" cx="50%" cy="50%" fill="#000e5e"/>
+    </svg>
+  </body>
+</html>
+
+	
