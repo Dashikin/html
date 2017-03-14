@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <title>Блок с тенью</title>
+	<style>
+	  .file {
+	  width: 50px;
+	  }
+	  .file, .correct {
+	  float: left;
+	  }
+	  .correct {
+	  margin-left: 50px; 
+	  width: 60px;
+	  }
+	  ul, .file:hover > p, .correct:hover > p {
+	  border: 1px solid #B9B9B9;
+	  }
+	  li {
+	  margin-bottom: 5px;
+	  cursor: pointer;
+	  color: #0057F2;
+	  }
+	  li:hover {
+      background: #37ABFF;
+	  }
+	  .filelist, .correctlist {
+	  display: none;
+	  }
+	  ul {
+	  list-style-type: none;
+	  margin: 0;
+	  padding-left: 3px;
+	  padding-top: 5px;
+	  width: 120px;
+	  border-radius: 0 0 5px 5px;
+	  background: #fff;
+	  box-shadow: 0 0 5px 1px #B9B9B9;
+	  }
+	  .file:hover > .filelist, .correct:hover > .correctlist {
+	  display: inline-block;
+	  }
+	  p {
+	  margin: 0;
+	  margin-top: 2px;
+	  margin-left: 1px;
+	  padding: 5px;
+	  border-bottom: 0;
+	  top: 1px;
+	  z-index: 1;
+	  text-align: center;
+	  display: block;
+	  }
+	  .file:hover > p, .correct:hover > p {
+	  margin: 0;
+	  padding-bottom: 5px;
+	  border-bottom: 0;
+	  border-radius: 5px 5px 0 0;
+	  padding: 5px;
+	  top: 1px;
+	  z-index: 1;
+	  text-align: center;
+	  box-shadow: 0 -4px 7px -3px #B9B9B9, 4px 0px 5px -3px #B9B9B9, -4px 0px 5px -3px #B9B9B9;
+	  display: block;
+	  }
+	  .file:hover > p, .correct:hover > p, ul {
+	  background: #fff;
+	  position: relative;
+	  }
+	  .file:hover > p > a, .correct:hover > p > a  {
+	  text-decoration: none;
+	  color: #000;
+	  display: block;
+	  }
+	</style>
+	</head>
+	<body>
+	  <div class="file">
+		<p><a href="#">Файл</a></p>
+		<ul class="filelist">
+		<li>Новый</li>
+		<li>Открыть</li>
+		<li>Сохранить</li>
+		<li>Закрыть</li>
+		</ul>
+	  </div>
+	  <div class="correct">
+		<p><a href="#">Правка</a></p>
+		<ul class="correctlist">
+		<li>Вырезать</li>
+		<li>Копировать</li>
+		<li>Вставить</li>
+		<li>Удалить</li>
+		</ul>
+	  </div>
+	</body>
+</html>
+
