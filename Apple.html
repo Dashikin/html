@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <title>Список</title>
+  <style>
+    body {
+    padding: 50px;
+	}
+	.block {
+    display: block;
+    border: 1px solid #ccccce;
+    width: 200px;
+    height: 150px;
+    padding: 8px;
+    border-radius: 6px;
+    position: relative;
+    background-color: #ffffff;
+	}
+	.block:before {
+    content: '';
+    display: block;
+    width: 150px;
+    height: 100px;
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    margin-top: 8px;
+    margin-left: -75px;
+    box-shadow: 0px 10px 25px #333333;
+    border-radius: 100px;
+    z-index: -1;
+	}
+	.block img {
+    display: block;
+    width: 200px;
+    height: 150px;
+	}
+  </style>
+  </head>
+  <body>
+    <div class="block"><img src="http://htmlbook.ru/files/ranetka.jpg" alt="Яблоки"></div>
+  </body>
+  </html>
