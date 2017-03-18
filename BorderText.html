@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="frame.css">
+    <title>Рамка вокруг текста</title>
+  <style>
+    body {
+    font-family: 'Times', sans-serif;
+    color: #fff;
+    margin-left: 10px;
+    }
+
+/* первый способ */
+
+	p_a {
+    box-shadow: 0 0 0 1px #fff,
+                0 0 0 2px #f05258;
+    display: inline-block;
+    width: 255px;
+    height: 25px;
+    background-color: #f05258;
+    padding: 5px 0 0 5px;
+    }
+
+/* второй способ */
+
+	p_b {
+	box-shadow: 0 0 0 1px #fff,
+				0 0 0 2px #f05258,
+				inset 0 0 0 20px #f05258;
+	display: inline-block;
+	padding: 5px 120px 5px 5px;
+	}
+
+
+/* третий способ */
+
+	p_c {
+	background-color: #f05258;
+	border: 3px double #fff;
+	box-sizing: content-box;
+	width: 255px;
+	height: 25px;
+	padding: 5px 0 0 5px;
+	}
+
+
+/* четвертый способ */
+
+	p_d {
+	background-color: #f05258;
+	outline: 1px solid #f05258;
+	outline-offset: 1px;
+	box-sizing: content-box;
+	width: 255px;
+	height: 25px;
+	padding: 5px 0 0 5px;
+	}
+
+/* пятый способ */
+
+	p::after {
+	content: '';
+	box-shadow: 0 0 0 1px #fff,
+                0 0 0 2px #f05258;
+	background-color: #f05258;
+	width: 260px;
+	height: 30px;
+	position: absolute;
+	z-index: -1;
+	left: 5px;
+	top: 10px;
+	}
+  </style>
+  </head>
+  <body>
+    <p class="p_a">Рамка вокруг текста</p>
+	<p class="p_b">Рамка вокруг текста</p>
+	<p class="p_c">Рамка вокруг текста</p>
+	<p class="p_d">Рамка вокруг текста</p>
+  </body>
+</html>
