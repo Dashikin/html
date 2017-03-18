@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <title>Блок с указателем</title>
+	<style>
+	  body{
+	  background:#333;
+	  padding:40px;
+	  }
+	  div{
+	  position:relative;
+	  background:rgb(101,180,186);
+	  border:4px solid rgb(143,220,224);
+	  text-align:center;
+	  line-height:60px;
+	  height:60px;
+	  color:#fff;
+	  }
+	  div::after, div::before{
+	  сontent:"";
+	  transform:translateX(-30px);
+	  position:absolute;
+	  left:50%;
+	  border:30px solid transparent;
+	  border-bottom:30px solid rgb(101,180,186);
+	  }
+	  div::after{
+	  top:-60px;
+	  border-bottom:30px solid rgb(101,180,186);
+	  }
+	  div::before{
+	  top:-64px;
+	  border-bottom:30px solid rgb(143,220,224);
+	  }
+	</style>
+  </head>
+    <body>
+	  <div> Дистанции огромного размера </div>
+	</body>
+</html>
+	

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <title>Блок с градиентом</title>
+	<style>
+	  *{margin:0;padding:0;}
+	  body {
+	  background:repeating-linear-gradient(45deg,#f00, #f00 1px,#fff 1px,#fff 15px) fixed;
+	  }
+	  .out {
+	  margin:30px;
+	  width:80%;
+	  padding:10px;
+	  background:linear-gradient(to top, rgba(92, 165, 149,.9), rgba(97,203,179,.9));
+	  border-radius:10px;
+	  border:2px solid #004c3b;
+	  }
+	  .in {
+	  min-height:100px;
+	  background:#edecde;
+	  border-radius:10px;
+	  border:1px solid #666;
+	  }
+	  .in h1{
+	  background:linear-gradient(to top, #ffba00, #ffd800);
+	  border-radius:10px 10px 0 0;
+	  position: relative;
+	  font:normal 1em Arial;
+	  padding:5px
+	  }
+	  .in h1:before {
+	  content:'';
+	  border:10px solid transparent;
+	  border-top:10px solid #ffba00;
+	  position: absolute;
+	  bottom:-20px;left:10px
+	  }
+	  .in p {
+	  padding-left:15px
+	  }
+	</style>
+  </head>
+  <body>
+    <div class="out">
+	<div class="in">
+		<h1>Заголовок</h1><br>
+		<p>Содержимое</p>
+	</div>
+	</div>
+  </body>
+</html>
